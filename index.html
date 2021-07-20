@@ -1,7 +1,7 @@
 <!--
     Nirel Marie M. IBarra
     ID #192468
-	Jul 05, 2021
+	July 29, 2021
 
 	I have not discussed the HTML, CSS, or JavaScript language code 
 	in my program with anyone other than my instructor or the teaching 
@@ -25,69 +25,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>About Me</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- adding a navigation bar here -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="fave-place">About Me</a></li>
-            <li><a href="favorite_place.html" class="fave-place">Favorite Place</a></li>
-        </ul>
+    <!-- navbar goes here -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="" class="dark-purple" id="navbar-logo">
+                KNEE_REL
+            </a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-links">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#images" class="navbar-links">Gallery</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="favorite_place.html" class="navbar-links">Fave Place</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- page heading -->
-    <section class='about-me'>
-        <h1 class='title'>All About Me!</h1>
-        <img src="./assets/swimming.png" alt="swimming">
-    </section>
-
-    <!-- self introduction -->
-    <section class="initial">
-        <h3 class='name'>My name is Nirel Ibarra</h3>
-        <p class='description'>Welcome to my blog! I’m pleased to share with you a few things about me. I will mostly be
-            super random
-            and I will be sharing some facts about myself.</p>
-    </section>
-
-    <!-- making a major section to use the css grid -->
     <main>
-        <!-- fact number 1 -->
-        <section class='caption'>
-            <h3>FACT#1: I speak a little German</h3>
-            <p>Do you want me to give an example? Wir können auf Deutsch sprechen, wenn Sie
-                mögen. Ja, ich
-                spreche
-                nur
-                ein
-                bisschen Deutsch. Ich habe gelernt Deutsch in die Üniversität seit 2020. </p>
+        <section class="top-container light-bg">
+            <img src="./assets/top-image.png" alt="">
+            <!-- i dont' like this but i need a div to reduce the width of the text -->
+            <div class="text-container">
+                <h1 class="heading-1-animation dark">Nirel's Blog</h1>
+                <h3 class="heading-3-animation dark">Welcome to my blog! I’m pleased to share with you a few things
+                    about me.
+                    I will mostly be
+                    super random
+                    and I will be sharing some facts about myself.</h3>
+                <a href="#blog-container" class="btn dark-purple light btn-animated">Learn More</a>
+            </div>
         </section>
-
-        <!-- fact number 2 -->
-        <section class='caption'>
-            <h3>FACT#2: I am a UAAP player</h3>
-            <p>I have been swimming for Ateneo since my senior high school days. I specialize in Breast
-                Stroke,
-                mostly
-                in
-                the
-                100 and 200 meters but I could also do the Individual Medley and mid-long distance swims. </p>
+        <section id="blog-container" class="dark-purple light">
+            <!-- i don't like this but i need extra div because i want to put in a proper height and center the cards -->
+            <h2>Blog Articles</h2>
+            <div class="blog-articles">
+                <a href="favorite_place.html" class='linking-card'>
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./assets/colorado.png" alt="" srcset="">
+                        </div>
+                        <div class="date">
+                            <h3 class="dark">08</h3>
+                            <p class="dark">SEPT</p>
+                        </div>
+                        <div class="article-card-caption">
+                            <h2 class="dark">I love Colorado Springs!</h2>
+                            <h3 class="dark">Reminiscing my trip from 2012</h3>
+                            <p class="dark">Tags: Lifestyle, Travel</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="favorite_place.html" class='linking-card'>
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./assets/swimming.png" alt="" srcset="">
+                        </div>
+                        <div class="date">
+                            <h3 class="dark">08</h3>
+                            <p class="dark">SEPT</p>
+                        </div>
+                        <div class="article-card-caption">
+                            <h2 class="dark">I love to Swim!</h2>
+                            <h3 class="dark">My life as a UAAP athlete</h3>
+                            <p class="dark">Tags: Sports, Athlete</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="favorite_place.html" class='linking-card'>
+                    <div class="article-card">
+                        <div class="article-card-img">
+                            <img src="./assets/get-vaccinated.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="date">
+                            <h3 class="dark">08</h3>
+                            <p class="dark">SEPT</p>
+                        </div>
+                        <div class="article-card-caption">
+                            <h2 class="dark">Get vaccinated now!</h2>
+                            <h3 class="dark">How to get vaccinated in the Caloocan Area</h3>
+                            <p class="dark">Tags: Covid Vaccination</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
-
-        <!-- fact number 3 -->
-        <section class='caption'>
-            <h3>FACT#3: I have vitiligo</h3>
-            <p> I was recently diagnosed with a skin disorder that is associated with the immune response, which is
-                Vitiligo.
-                There may be no cure for it but there are ways to manage its presence.</p>
+        <section id="images">
+            <div class="gallery">
+                <div class="card-1"></div>
+                <div class="card-2"></div>
+                <div class="card-3"></div>
+                <div class="card-4"></div>
+                <div class="card-5"></div>
+                <div class="card-6"></div>
+                <div class="card-7"></div>
+                <div class="card-8"></div>
+                <div class="card-9"></div>
+                <div class="card-10"></div>
+                <div class="card-11"></div>
+                <div class="card-12"></div>
+                <div class="card-13"></div>
+            </div>
+        </section>
+        <section id="contact" class="light-purple">
+            <!-- had to put in another div to have that javascript animation, wont work with the section only -->
+            <div class="contact-container">
+                <h1 class='light btn-animated'>LOVED MY BLOG? SHOOT ME A MESSAGE!</h1>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder='First Name'>
+                    <input type="text" placeholder='Last Name'>
+                    <input type="email" placeholder='Email'>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </form>
+                <a href="#" class="btn pink dark btn-animated">Submit</a>
+            </div>
         </section>
     </main>
-
     <!-- footer goes here -->
     <footer>
-        My Personal Blog. All rights reserved. No copyright infringement intended on borrowed photos.
+        <div class="row-1">
+            <h3>Food Manager</h3>
+            <p class="item"> Nirel Ibarra is a junior ITE student who is very random and adventurous. She loves to
+                embark on journeys where she has a close encounter with nature. This is is a personal blog where she
+                writes about her adventures and trips.</p>
+            <div class="footer-nav">
+                <p class="download">Download Now</p>
+                <p class="download">License</p>
+            </div>
+
+            <p class='item'>&copy; 2021 Nirel Ibarra. All rights reserved.</p>
+        </div>
+
+        <div class="row-2">
+            <h3>Site Navigation</h3>
+            <a href="index.html" class='footer-links'>
+                <p class='item'>Home</p>
+            </a>
+            <a href="#contact" class='footer-links'>
+                <p class='item'>Contact</p>
+            </a>
+            <a href="#images" class='footer-links'>
+                <p class='item'>Gallery</p>
+            </a>
+            <a href="favorite_place.html" class='footer-links'>
+                <p class='item'>Fave Place</p>
+            </a>
+        </div>
+
+        <div class="row-3">
+            <h3>Contact Us</h3>
+            <p class="item">nirelmarieibarra@gmail.com</p>
+        </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

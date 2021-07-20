@@ -1,3 +1,22 @@
+<!--
+    Nirel Marie M. IBarra
+    ID #192468
+	July 29, 2021
+
+	I have not discussed the HTML, CSS, or JavaScript language code 
+	in my program with anyone other than my instructor or the teaching 
+	assistants assigned to this course.
+
+	I have not used HTML, CSS, or JavaScript language code obtained 
+	from another student, or any other unauthorized source, either 
+	modified or unmodified.
+
+	If any HTML, CSS, or JavaScript language code or documentation 
+	used in my program was obtained from another source, such as a 
+	textbook or website, that has been clearly noted with a proper 
+	citation in the comments of my program.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,41 +29,129 @@
 </head>
 
 <body>
-    <!-- adding a header here -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="fave-place">About Me</a></li>
-            <li><a href="favorite_place.html" class="fave-place">Favorite Place</a></li>
-        </ul>
+    <!-- navbar goes here -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="" class="dark-purple" id="navbar-logo">
+                KNEE_REL
+            </a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-links">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#images" class="navbar-links">Gallery</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="favorite_place.html" class="navbar-links">Fave Place</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <main class="fave-page light-purple">
+        <section class="blog-title">
+            <h1 class='light'>My Favorite Place!</h1>
+            <h3 class='light'>Colorado Springs, Colorado, USA</h3>
+        </section>
 
-    <section class='about-me'>
-        <h1 class='title'>My Favorite Place!</h1>
-        <img src="./assets/colorado.png" alt="">
-        <h3 class='name'>Colorado Springs, Colorado, USA</h3>
-    </section>
+        <section class='blog-gallery'>
+            <div class="image-gallery">
+                <div class="blog-card1"></div>
+                <div class="blog-card2"></div>
+                <div class="blog-card3"></div>
+                <div class="blog-card4"></div>
+                <div class="blog-card5"></div>
+                <div class="blog-card6"></div>
+                <div class="blog-card7"></div>
+            </div>
+        </section>
 
-    <section class='gap'>
-        <h3>When did you visit this place?</h3>
-        <p>I visited this place on May 2013. At that time, I recently just turned 12 when my uncle told me that we were
-            going on an adventure. We drove for endless hours and it was exhilirating. We reached this destination
-            called Garden of the Gods. I took lots of pictures in that place.</p>
-        <br>
-        <h3>What can you see in this place?</h3>
-        <p>Mostly rock formations that are really cool as they defy the laws of physics. Then, there are breath taking
-            views that overlook cliffs. There is also this museum where Native Americans were showcased in the exhibits.
-            As a historical nerd, I felt much affinity with this place. </p>
-        <br>
-        <h3>Why is this place your favorite?</h3>
-        <p>I love the cold weather as it is the opposite as in the Philippines. The elevation of around 4000+ feet is
-            actually a challenge for the lungs due to the decreased air pressure, but I like it. As a swimmer, it was
-            good practice to encounter this kind of landscape for it toughens up my lungs. Besides that, I like this
-            place because it is a change of environment– away from the water. I really am a nature lover and if given
-            the change, I would definitely love to come by and recreate my photos. </p>
-    </section>
+        <section id='blog-content'>
+            <!-- need another div because text won't center without it -->
+            <div class="blog-text dark-purple">
+                <h2 class='light'>When did you visit this place?</h2>
+                <p class='light'>I visited this place on May 2013. At that time, I recently just turned 12 when my uncle
+                    told me that we
+                    were
+                    going on an adventure. We drove for endless hours and it was exhilirating. We reached this
+                    destination
+                    called Garden of the Gods. I took lots of pictures in that place.</p>
+                <br>
+                <h2 class='light'>What can you see in this place?</h2>
+                <p class='light'>Mostly rock formations that are really cool as they defy the laws of physics. Then,
+                    there
+                    are breath
+                    taking
+                    views that overlook cliffs. There is also this museum where Native Americans were showcased in the
+                    exhibits.
+                    As a historical nerd, I felt much affinity with this place. </p>
+                <br>
+                <h2 class='light'>Why is this place your favorite?</h2>
+                <p class='light'>I love the cold weather as it is the opposite as in the Philippines. The elevation of
+                    around 4000+ feet
+                    is
+                    actually a challenge for the lungs due to the decreased air pressure, but I like it. As a swimmer,
+                    it
+                    was
+                    good practice to encounter this kind of landscape for it toughens up my lungs. Besides that, I like
+                    this
+                    place because it is a change of environment– away from the water. I really am a nature lover and if
+                    given
+                    the change, I would definitely love to come by and recreate my photos. </p>
+                <br>
+                <h2 class='light'>What can you recommend when you go here?</h2>
+                <p class='light'>I would definitely recommend to bring thick clothing because it's really cold in the
+                    area. I'd say consider wearing many layers of clothes to keep yourself warm. Also, expect the air to
+                    be really different because we always use a humidifier at home. </p>
+            </div>
+        </section>
+    </main>
+    <!-- footer goes here -->
     <footer>
-        My Personal Blog. All rights reserved. No copyright infringement intended on borrowed photos.
+        <div class="row-1">
+            <h3>Food Manager</h3>
+            <p class="item"> Nirel Ibarra is a junior ITE student who is very random and adventurous. She loves to
+                embark on journeys where she has a close encounter with nature. This is is a personal blog where she
+                writes about her adventures and trips.</p>
+            <div class="footer-nav">
+                <p class="download">Download Now</p>
+                <p class="download">License</p>
+            </div>
+
+            <p class='item'>&copy; 2021 Nirel Ibarra. All rights reserved.</p>
+        </div>
+
+        <div class="row-2">
+            <h3>Site Navigation</h3>
+            <a href="index.html" class='footer-links'>
+                <p class='item'>Home</p>
+            </a>
+            <a href="#contact" class='footer-links'>
+                <p class='item'>Contact</p>
+            </a>
+            <a href="#images" class='footer-links'>
+                <p class='item'>Gallery</p>
+            </a>
+            <a href="favorite_place.html" class='footer-links'>
+                <p class='item'>Fave Place</p>
+            </a>
+        </div>
+
+        <div class="row-3">
+            <h3>Contact Us</h3>
+            <p class="item">nirelmarieibarra@gmail.com</p>
+        </div>
     </footer>
+    <script src="favorite_place.js" defer></script>
 </body>
 
 </html>
