@@ -76,11 +76,11 @@
   }
 }
 
-html,
+/* html,
 body {
   overflow-x: hidden;
   margin: 0 auto;
-}
+} */
 
 /* general text styles */
 h1 {
